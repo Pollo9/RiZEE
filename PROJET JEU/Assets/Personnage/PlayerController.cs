@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
 	private Vector3 DirectionDeplacement = Vector3.zero;
 	private CharacterController Player;
 	public int Sensi;
-	public int Jump = 3;
-	public int Gravité = 20;
+	private int Jump = 3;
+	private int Gravité = 15;
 	private Animator Anim;
 	
 	void Start ()
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 		
 		//Deplacement
 
-		if (Input.GetKey(KeyCode.LeftShift) & Input.GetKey(KeyCode.W))
+		if (Input.GetKey(KeyCode.LeftShift) & Input.GetKey(KeyCode.Z))
 		{
 			Anim.SetBool("Run", true);
 			Player.Move(DirectionDeplacement * Time.deltaTime * RunSpeed);
@@ -58,20 +58,60 @@ public class PlayerController : MonoBehaviour
 		}
 		
 		//Animations
-		if ((Input.GetKey(KeyCode.S) | Input.GetKey(KeyCode.W)) & !Input.GetKey(KeyCode.LeftShift))
+
+		// walk
+		if (Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.D))
 		{
 			Anim.SetBool("Walk", true);
 			Anim.SetBool("Run",false);
+			Anim.SetBool("Walk L", false);
+			Anim.SetBool("Walk R", false);
 		}
-		
-		if ((Input.GetKey(KeyCode.S) | Input.GetKey(KeyCode.W)) & Input.GetKey(KeyCode.LeftShift))
+		// walk left
+		if (Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.D))
+		{
+			Anim.SetBool("Walk", true);
+			Anim.SetBool("Run",false);
+			Anim.SetBool("Walk L", true);
+			Anim.SetBool("Walk R", false);
+		}
+		//walk right
+		if (Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.D))
+		{
+			Anim.SetBool("Walk", true);
+			Anim.SetBool("Run",false);
+			Anim.SetBool("Walk L", false);
+			Anim.SetBool("Walk R", true);
+		}
+		// run
+		if (Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftShift)&& !Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.D))
 		{
 			Anim.SetBool("Walk", true);           
 			Anim.SetBool("Run",true);
-		}
-		
-		if (Input.GetKey(KeyCode.S) | Input.GetKeyUp(KeyCode.W))
+			Anim.SetBool("Walk L", false);
+			Anim.SetBool("Walk R", false);
+		}                                                     
+		//run left                                            
+		if (Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftShift)&& Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.D))
 		{
+			Anim.SetBool("Walk", true);           
+			Anim.SetBool("Run",true);
+			Anim.SetBool("Walk L", true);
+			Anim.SetBool("Walk R", false);
+		}
+		// run right
+		if (Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.LeftShift)&& !Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.D))
+		{
+			Anim.SetBool("Walk", true);           
+			Anim.SetBool("Run",true);
+			Anim.SetBool("Walk L", false);
+			Anim.SetBool("Walk R", true);
+		}
+		// stop walk
+		if (Input.GetKeyUp(KeyCode.Z))
+		{
+			Anim.SetBool("Walk L",false);
+			Anim.SetBool("Walk R", false);
 			Anim.SetBool("Walk", false);
 			Anim.SetBool("Run", false);
 		}
