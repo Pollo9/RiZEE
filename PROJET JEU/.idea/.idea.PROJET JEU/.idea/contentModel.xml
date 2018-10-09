@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="\9f31df25" t="IncludeRecursive" />
+    <e p="\39f85619" t="IncludeRecursive" />
     <e p="\app" t="IncludeRecursive" />
     <e p="C:\Users\Alexis\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Alexis\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_PROJET JEU.793063249.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Alexis\Documents\PROJET JEU\PROJET JEU\PROJET JEU" t="IncludeRecursive">
+    <e p="C:\Users\Alexis\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_PROJET JEU.-419743517.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Alexis\Documents\GitHub\RiZEE\PROJET JEU" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
           <e p="ImageEffects" t="Include">
@@ -25,6 +26,9 @@
             <e p="TonemappingEditor.cs" t="Include" />
             <e p="VignetteAndChromaticAberrationEditor.cs" t="Include" />
           </e>
+        </e>
+        <e p="Personnage" t="Include">
+          <e p="PlayerController.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
@@ -44,6 +48,7 @@
                 <e p="BallUserControl.cs" t="Include" />
               </e>
             </e>
+            <e p="test.cs" t="Include" />
             <e p="ThirdPersonCharacter" t="Include">
               <e p="Scripts" t="Include">
                 <e p="AICharacterControl.cs" t="Include" />
