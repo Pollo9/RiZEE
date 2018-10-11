@@ -7,12 +7,13 @@ public class PlayerController : MonoBehaviour
 	public int Speed = 5;
 	public int RunSpeed = 10;
 
-	private Vector3 DirectionDeplacement = Vector3.zero;
+	private Vector3 DirectionDeplacement = Vector3.forward;
 	private CharacterController Player;
 	public int Sensi;
 	private int Jump = 3;
 	private int Gravité = 15;
 	private Animator Anim;
+	public int TurnSpeed = 2;
 	
 	void Start ()
 	{
@@ -44,6 +45,9 @@ public class PlayerController : MonoBehaviour
 		}
 		transform.Rotate(0,Input.GetAxisRaw("Mouse X")*Sensi,0);
 
+		//Rotation
+
+		
 		//Saut
 		if (Input.GetKeyDown(KeyCode.Space) && Player.isGrounded)
 		{
