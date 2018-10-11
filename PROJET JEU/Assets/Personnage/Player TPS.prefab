@@ -1213,6 +1213,8 @@ GameObject:
   - component: {fileID: 95059696427074930}
   - component: {fileID: 143258917131060794}
   - component: {fileID: 114300982934708250}
+  - component: {fileID: 114968392692162338}
+  - component: {fileID: 114926574293831266}
   m_Layer: 0
   m_Name: Player TPS
   m_TagString: Untagged
@@ -2464,8 +2466,55 @@ MonoBehaviour:
   Speed: 3
   RunSpeed: 10
   Sensi: 3
-  Jump: 3
-  "Gravit\xE9": 20
+  TurnSpeed: 2
+--- !u!114 &114926574293831266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976396602739844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 249
+    i1: 229
+    i2: 9
+    i3: 84
+    i4: 179
+    i5: 231
+    i6: 160
+    i7: 36
+    i8: 169
+    i9: 35
+    i10: 189
+    i11: 74
+    i12: 209
+    i13: 205
+    i14: 144
+    i15: 22
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &114968392692162338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976396602739844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a678e54dc438a0429bfa1a43b3ec643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
+  - {fileID: 114300982934708250}
+  - {fileID: 20177102182725060}
+  - {fileID: 81906223109236570}
+  - {fileID: 0}
 --- !u!137 &137374027248591750
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
