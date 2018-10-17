@@ -1211,8 +1211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4368775265944642}
   - component: {fileID: 95059696427074930}
+  - component: {fileID: 114596505073643552}
   - component: {fileID: 143258917131060794}
-  - component: {fileID: 114300982934708250}
   - component: {fileID: 114968392692162338}
   - component: {fileID: 114926574293831266}
   - component: {fileID: 114047301161350626}
@@ -2476,21 +2476,6 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 10
   m_InterpolateMovement: 1
---- !u!114 &114300982934708250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1976396602739844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60914f73035eaf419a4cc6610582739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 3
-  RunSpeed: 10
-  Sensi: 3
-  TurnSpeed: 2
 --- !u!114 &114335433574651170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2522,6 +2507,19 @@ MonoBehaviour:
   m_MovementThreshold: 0.001
   m_InterpolateRotation: 0.5
   m_InterpolateMovement: 0
+--- !u!114 &114596505073643552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976396602739844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045d8f785683add488d68c6154beaacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
+  gravity: 20
 --- !u!114 &114926574293831266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2566,7 +2564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentsToDisable:
-  - {fileID: 114300982934708250}
+  - {fileID: 0}
   - {fileID: 20177102182725060}
   - {fileID: 81906223109236570}
   - {fileID: 0}
