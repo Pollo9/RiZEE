@@ -1,10 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.U2D;
+﻿using System;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Player_Controller : MonoBehaviour
+
+public class Player_Controller : NetworkBehaviour
 {
+	
+	
 	public float speed = 0.2f;
 	public float gravity = 20f;
 	private Vector3 moveDirection = Vector3.zero;

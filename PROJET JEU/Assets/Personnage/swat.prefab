@@ -878,6 +878,10 @@ GameObject:
   - component: {fileID: 95588436363002782}
   - component: {fileID: 143423541358195342}
   - component: {fileID: 114681539475412348}
+  - component: {fileID: 114878850463233154}
+  - component: {fileID: 114550207158226408}
+  - component: {fileID: 114889856965363198}
+  - component: {fileID: 114225534198069314}
   m_Layer: 0
   m_Name: swat
   m_TagString: Untagged
@@ -2265,6 +2269,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114225534198069314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776346666296568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 4
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
+--- !u!114 &114550207158226408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776346666296568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a678e54dc438a0429bfa1a43b3ec643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentsToDisable:
+  - {fileID: 114681539475412348}
+  - {fileID: 20312640866777874}
+  - {fileID: 81442541033781316}
 --- !u!114 &114681539475412348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2278,6 +2318,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.9
   gravity: 20
+--- !u!114 &114878850463233154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776346666296568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5df20da9a0c4c6c8019f0f4ca3dbca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomSize: 6
+--- !u!114 &114889856965363198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776346666296568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 204
+    i1: 204
+    i2: 119
+    i3: 15
+    i4: 20
+    i5: 235
+    i6: 40
+    i7: 100
+    i8: 153
+    i9: 101
+    i10: 70
+    i11: 240
+    i12: 141
+    i13: 185
+    i14: 85
+    i15: 207
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!137 &137230743843758074
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
