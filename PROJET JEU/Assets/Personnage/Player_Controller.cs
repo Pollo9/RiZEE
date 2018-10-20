@@ -33,7 +33,7 @@ public class Player_Controller : NetworkBehaviour
 		Cc.Move(moveDirection * Time.deltaTime);
 
 		//Secret dance ;)
-		if (Input.GetKeyDown(KeyCode.P))
+		if (Input.GetKey(KeyCode.P))
 		{   
 			anim.SetInteger("States", 22);
 			anim.SetInteger("R_L",0);
@@ -48,37 +48,37 @@ public class Player_Controller : NetworkBehaviour
 		*/
 		
 		// marche arrière
-		if (Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
 		{
 			anim.SetInteger("States", -1);
 			anim.SetInteger("R_L",0);
 		}
 		// marche avant
-		if (Input.GetKeyDown(KeyCode.W)&& !Input.GetKeyDown(KeyCode.A)&& !Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKey(KeyCode.W)&& !Input.GetKey(KeyCode.A)&& !Input.GetKey(KeyCode.D))
 		{
 			anim.SetInteger("States", 1);
 			anim.SetInteger("R_L",0);
 		}
 		// marche avant droite
-		if (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
 		{
 			anim.SetInteger("States", 1);
 			anim.SetInteger("R_L",1);
 		}
 		// marche avant gauche
-		if (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.A))
+		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
 		{
 			anim.SetInteger("States", 1);
 			anim.SetInteger("R_L",2);
 		}
 		// marche droite
-		if (Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W))
 		{
 			anim.SetInteger("States", 0);
 			anim.SetInteger("R_L", 1);
 		}
 		// marche gauche
-		if (Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W))
 		{
 			anim.SetInteger("States", 0);
 			anim.SetInteger("R_L", 2);
