@@ -1,36 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class ScriptZombie : MonoBehaviour {
-	
+public class ScriptZombie : MonoBehaviour
+{
 
-	private Vector3 ZombiePosition;
-	private Animator _animator;
-	private int _playerOnSightHash;
-	private int _reachedPointHash;
-    
-	public Vector3 zombiePosition { get { return ZombiePosition; } }
-	public int ReachedPointHash { get { return _reachedPointHash; } }
-	private void Start()
+
+	public float lookRadius = 10f;
+
+	private Transform target;
+	private NavMeshAgent agent;
+	void Start()
 	{
-		ZombiePosition = transform.position;
-		_animator = GetComponent(typeof(Animator)) as Animator;
-		_playerOnSightHash = Animator.StringToHash("PlayerOnSight");
-		_reachedPointHash = Animator.StringToHash("ReachedPoint");
+		target = PlayerManager.instance.player.transform;
+		agent = GetComponent<NavMeshAgent>();
 	}
-	private void OnTriggerEnter(Collider collider)
+
+	void Update()
 	{
-		if(collider.CompareTag("Player"))
+		float distance = Vector3.Distance(target.position, transform.position);
+
+		if (distance <= lookRadius)
 		{
-			_animator.SetBool(_playerOnSightHash, true);
+			agent.SetDestination(target.position);
+			if (distance <= agent.stoppingDistance)
+			{
+				FaceTarget();
+			}
 		}
 	}
-	private void OnTriggerExit(Collider collider)
+
+	void FaceTarget()
 	{
-		if (collider.CompareTag("Player"))
-		{
-			_animator.SetBool(_playerOnSightHash, false);
-		}
+		Vector3 direction = (target.position - transform.position).normalized;
+		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+	}
+
+	public void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, lookRadius);
 	}
 }

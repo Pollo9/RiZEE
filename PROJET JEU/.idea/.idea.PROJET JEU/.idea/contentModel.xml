@@ -288,7 +288,7 @@
         </e>
         <e p="TestJunkSMB.cs" t="Include" />
         <e p="Zombie" t="Include">
-          <e p="ChasePlayer.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
           <e p="ScriptZombie.cs" t="Include" />
         </e>
       </e>
