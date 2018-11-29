@@ -2396,7 +2396,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2483,9 +2483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentsToDisable:
-  - {fileID: 0}
+  - {fileID: 114755566595421110}
   - {fileID: 20552384131428914}
   - {fileID: 81076938003767624}
+  - {fileID: 114357034435715776}
 --- !u!114 &114735966738018612
 MonoBehaviour:
   m_ObjectHideFlags: 1

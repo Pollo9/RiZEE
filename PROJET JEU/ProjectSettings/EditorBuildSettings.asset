@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/map hopital.unity
-    guid: 498e31d9cfc27d14f8186ae4eef6830b
+    path: Assets/Scenes/Menu.unity
+    guid: 264416188a9124c89a1c0731e65e7156
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 515b50bd6199929448614a95d5be2099
+  - enabled: 1
+    path: Assets/Scenes/map hopital.unity
+    guid: 498e31d9cfc27d14f8186ae4eef6830b
   m_configObjects: {}
