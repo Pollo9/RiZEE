@@ -41,7 +41,7 @@ using UnityEngine.UI;
 				networkManager.StartMatchMaker();
 			}
 
-			networkManager.matchMaker.ListMatches(0, 20, "", true, 0, 0, OnMatchList);
+			networkManager.matchMaker.ListMatches(0, 10, "", true, 0, 0, OnMatchList);
 			status.text = "Loading...";
 		}
 
