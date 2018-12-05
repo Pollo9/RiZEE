@@ -74,7 +74,7 @@ using UnityEngine.UI;
 
 			if (roomList.Count == 0)
 			{
-				status.text = "No rooms at the moment.";
+				status.text = "No rooms";
 			}
 		}
 

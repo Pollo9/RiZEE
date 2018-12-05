@@ -60,6 +60,9 @@
         </e>
         <e p="Network" t="Include">
           <e p="HostGame.cs" t="Include" />
+          <e p="Prefab" t="Include">
+            <e p="PlayerUI.cs" t="Include" />
+          </e>
           <e p="SetupP.cs" t="Include" />
         </e>
         <e p="ouverture de porte" t="Include">
