@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Networking;
 
-public class zombiebasicscript : MonoBehaviour
+public class zombiebasicscript : NetworkBehaviour
 {
 
-    public Transform player;
+    private Transform player;
     public List<GameObject> destinationpoints;
     public float speed;
     public float alertdistance;
@@ -19,6 +20,7 @@ public class zombiebasicscript : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.enabled = false;
@@ -27,6 +29,7 @@ public class zombiebasicscript : MonoBehaviour
    
     // Update is called once per frame
     void Update () {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         //alert
         if (Vector3.Distance(player.position, transform.position) < alertdistance &&
             Vector3.Distance(player.position, transform.position) > walkingdistance)
