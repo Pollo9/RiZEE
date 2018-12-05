@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     public float lookSensitivityY = 5;
 
+    private CharacterController Cc;
+
     private Animator anim;
 
 
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Start()
     {
+        Cc = GetComponent<CharacterController>();
         motor = GetComponent<PlayerMotor>();
         anim = GetComponent<Animator>();
     }
@@ -40,14 +43,14 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 _rotation = new Vector3(0, _yRot, 0) * lookSensitivityX;
 
-        motor.Rotate(_rotation);
+       // motor.Rotate(_rotation);
 
         //On va calculer la rotation du joueur en un Vecteur 3D
         float _xRot = Input.GetAxisRaw("Mouse Y");
         
        float _camerarotationX = _xRot * lookSensitivityY;
 
-        motor.RotateCamera(_camerarotationX);
+       // motor.RotateCamera(_camerarotationX);
 
         if (Input.GetKey(KeyCode.P))
         {

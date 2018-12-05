@@ -549,15 +549,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4095286749216816}
   - component: {fileID: 95293107942084024}
-  - component: {fileID: 143192133598167124}
   - component: {fileID: 114735966738018612}
   - component: {fileID: 114515752916319154}
   - component: {fileID: 114076502782142984}
   - component: {fileID: 114815742081001930}
   - component: {fileID: 114878751209794886}
-  - component: {fileID: 114357034435715776}
-  - component: {fileID: 114755566595421110}
-  - component: {fileID: 54230230245013228}
+  - component: {fileID: 143446750725169562}
+  - component: {fileID: 114097000163185506}
   m_Layer: 0
   m_Name: swat
   m_TagString: Player
@@ -2386,21 +2384,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1154161018313508}
   m_Mesh: {fileID: 4300002, guid: 5112e6444b23577429168ceb76476ae4, type: 3}
---- !u!54 &54230230245013228
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1509204198773160}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!81 &81076938003767624
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2458,7 +2441,7 @@ MonoBehaviour:
     i15: 207
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114357034435715776
+--- !u!114 &114097000163185506
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2466,11 +2449,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1509204198773160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5b4642e0b748bc4f89a704f9e966317, type: 3}
+  m_Script: {fileID: 11500000, guid: 4655eff983ee68d43bf18e5401c384b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookSensitivity: 5
+  speed: 5
+  gravity: 20
   cam: {fileID: 20552384131428914}
-  cameraRotationLimit: 85
 --- !u!114 &114515752916319154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2483,10 +2468,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentsToDisable:
-  - {fileID: 114755566595421110}
+  - {fileID: 0}
   - {fileID: 20552384131428914}
   - {fileID: 81076938003767624}
-  - {fileID: 114357034435715776}
+  - {fileID: 0}
 --- !u!114 &114735966738018612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2499,20 +2484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomSize: 6
---- !u!114 &114755566595421110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1509204198773160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e97cfae6d4a7473449714e0ae9ecb859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  lookSensitivityX: 3
-  lookSensitivityY: 3
 --- !u!114 &114815742081001930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2708,7 +2679,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000035583973, y: -0.1812638, z: -0.0023246408}
     m_Extent: {x: 0.9614858, y: 0.783388, z: 0.19266985}
   m_DirtyAABB: 0
---- !u!143 &143192133598167124
+--- !u!143 &143446750725169562
 CharacterController:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2718,10 +2689,10 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.81
+  m_Height: 1.65
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.91, z: 0}
+  m_Center: {x: 0, y: 0.86, z: 0}
