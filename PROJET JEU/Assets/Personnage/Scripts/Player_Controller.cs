@@ -6,13 +6,14 @@ using UnityEngine.Networking;
 public class Player_Controller : NetworkBehaviour
 {
 
-    
+    public float cameraRotationLimit = 50f;
     public float lookSensitivity = 4f;
 	public float speed = 0.2f;
 	public float gravity = 20f;
 	private Vector3 moveDirection = Vector3.zero;
 	private CharacterController Player;
 	private Animator anim;
+    private float currentCameraRotationX = 0f;
 
     [SerializeField]
     private Camera cam;
@@ -34,10 +35,19 @@ public class Player_Controller : NetworkBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
 		Player.Move(moveDirection * Time.deltaTime);
 
-        cam.transform.Rotate(-Input.GetAxisRaw("Mouse Y") * lookSensitivity,0,0);
 
-		//Secret dance ;)
-		if (Input.GetKey(KeyCode.P))
+        float _xRot = Input.GetAxisRaw("Mouse Y") * lookSensitivity;
+        cam.transform.Rotate(-_xRot, 0,0);
+
+        currentCameraRotationX -= _xRot;
+        currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -cameraRotationLimit, cameraRotationLimit);
+
+        cam.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
+
+
+
+        //Secret dance ;)
+        if (Input.GetKey(KeyCode.P))
 		{   
 			anim.SetInteger("States", 22);
 			anim.SetInteger("R_L",0);
