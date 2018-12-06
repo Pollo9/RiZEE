@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Asus\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PROJET JEU.349312528.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Asus\Desktop\Projet riseze\RiZEE\PROJET JEU" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\thoma\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\thoma\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_PROJET JEU.2114707706.00" t="ExcludeRecursive" />
+    <e p="C:\Users\thoma\OneDrive\Documents\GitHub\RiZEE\PROJET JEU" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -54,6 +54,11 @@
             </e>
           </e>
         </e>
+        <e p="FreeLabAssets" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="SBS_Mana.shader" t="Include" />
+          </e>
+        </e>
         <e p="Lobby" t="Include">
           <e p="Joingame.cs" t="Include" />
           <e p="joinGame2.cs" t="Include" />
@@ -66,6 +71,7 @@
         </e>
         <e p="ouverture de porte" t="Include">
           <e p="ouverture_porte.cs" t="Include" />
+          <e p="ouverture_porte_couloir.cs" t="Include" />
         </e>
         <e p="Personnage" t="Include">
           <e p="CameraCollision.cs" t="Include" />
@@ -74,13 +80,6 @@
             <e p="Player_Controller.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerMotor.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Plugins" t="Include">
-          <e p="Editor" t="Include">
-            <e p="JetBrains" t="Include">
-              <e p="Unity3DRider.cs" t="Include" />
-            </e>
           </e>
         </e>
         <e p="Standard Assets" t="Include">
