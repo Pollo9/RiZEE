@@ -10,8 +10,11 @@
       <e p="Assets" t="Include">
         <e p="Dialogue" t="Include">
           <e p="Beginning.cs" t="Include" />
+          <e p="decision.cs" t="Include" />
           <e p="firstzombie.cs" t="Include" />
           <e p="Getkey.cs" t="Include" />
+          <e p="gotit.cs" t="Include" />
+          <e p="passit.cs" t="Include" />
         </e>
         <e p="Editor" t="Include">
           <e p="ImageEffects" t="Include">
