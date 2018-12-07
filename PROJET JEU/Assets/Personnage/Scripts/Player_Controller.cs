@@ -8,7 +8,6 @@ public class Player_Controller : NetworkBehaviour
 
     public float cameraRotationLimit = 50f;
     public float lookSensitivity = 4f;
-	public float speed = 0.2f;
 	public float gravity = 20f;
 	private Vector3 moveDirection = Vector3.zero;
 	private CharacterController Player;
@@ -33,7 +32,7 @@ public class Player_Controller : NetworkBehaviour
         Player.transform.Rotate(0, Input.GetAxisRaw("Mouse X") * lookSensitivity, 0) ;
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
-        moveDirection *= speed;
+        moveDirection = moveDirection * 200* Time.deltaTime;
         moveDirection.y -= gravity * Time.deltaTime;
 		Player.Move(moveDirection * Time.deltaTime);
 
@@ -87,9 +86,21 @@ public class Player_Controller : NetworkBehaviour
             anim.SetInteger("States", 1);
             anim.SetInteger("R_L", 2);
         }
-        // marche droite
-        if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.Z))
+        // marche arrière droite
+        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
         {
+            anim.SetInteger("States", -1);
+            anim.SetInteger("R_L", 1);
+        }
+            // marche arrière gauche
+            if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Q))
+            {
+                anim.SetInteger("States", -1);
+                anim.SetInteger("R_L", 2);
+            }
+            // marche droite
+            if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.Z))
+            {
             anim.SetInteger("States", 0);
             anim.SetInteger("R_L", 1);
         }
