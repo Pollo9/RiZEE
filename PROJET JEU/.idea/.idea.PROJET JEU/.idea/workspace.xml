@@ -63,8 +63,8 @@
     <session id="-2136589230">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.closed" value="22" />
+          <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
@@ -72,30 +72,34 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="874" />
+          <entry key="cs" value="1131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="874" />
+          <entry key="C#" value="1131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cs" value="12" />
+          <entry key="sln" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C#" value="12" />
+          <entry key="Solution File" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -152,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Network/Prefab/PlayerUI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
+            <state relative-caret-position="405">
               <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <marker date="1544136357262" expanded="false" signature="6:40" ph="..." />
@@ -170,35 +174,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Personnage/Scripts/Player_Controller.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="88" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
-              <folding>
-                <marker date="1544133898540" expanded="false" signature="6:62" ph="..." />
-                <marker date="1544133898540" expanded="true" signature="114:3529" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="505:602" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="656:3527" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="1559:1637" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="1647:1881" ph="/* if (Input.GetKeyDown(KeyCode.S) &amp;&amp; Input.GetKeyDown(KeyCode.W) &amp;&amp; Input.GetKeyDown(KeyCode.P) &amp;&amp; Input.GetKeyD ... */" />
-                <marker date="1544133898540" expanded="true" signature="2001:2103" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="2220:2321" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="2416:2517" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="2612:2713" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="2803:2904" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="2994:3095" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="3159:3221" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="3261:3323" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="3362:3421" ph="{...}" />
-                <marker date="1544133898540" expanded="true" signature="3461:3520" ph="{...}" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Lobby/PauseMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="19" column="66" lean-forward="true" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
               <folding>
                 <marker date="1544136477611" expanded="false" signature="6:84" ph="..." />
                 <marker date="1544136477611" expanded="true" signature="125:510" ph="{...}" />
@@ -209,6 +195,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Network/OnTriggerload.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <marker date="1545786722906" expanded="false" signature="6:78" ph="..." />
+                <marker date="1545786722906" expanded="true" signature="122:514" ph="{...}" />
+                <marker date="1545786722906" expanded="true" signature="206:242" ph="{...}" />
+                <marker date="1545786722906" expanded="true" signature="287:453" ph="{...}" />
+                <marker date="1545786722906" expanded="true" signature="293:450" ph="{...}" />
+                <marker date="1545786722906" expanded="true" signature="397:447" ph="{...}" />
+                <marker date="1545786722906" expanded="true" signature="476:512" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PROJET JEU.sln">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -217,6 +226,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Zombie/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Network/OnTriggerload.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Network/Prefab/PlayerUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Lobby/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Personnage/Scripts/Player_Controller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -262,6 +272,7 @@
         <option value="$PROJECT_DIR$/Assets/Personnage/Scripts/Player_Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Network/Prefab/PlayerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Lobby/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Network/OnTriggerload.cs" />
       </list>
     </option>
   </component>
@@ -274,7 +285,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="723" />
+    <option name="height" value="721" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -282,10 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -298,6 +305,10 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,11 +412,17 @@
       <workItem from="1544132092554" duration="509000" />
       <workItem from="1544132816125" duration="1079000" />
       <workItem from="1544133921204" duration="2363000" />
+      <workItem from="1545784006435" duration="89000" />
+      <workItem from="1545784280971" duration="707000" />
+      <workItem from="1545785656193" duration="151000" />
+      <workItem from="1545786272063" duration="84000" />
+      <workItem from="1545786483005" duration="40000" />
+      <workItem from="1545786696921" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37149000" />
+    <option name="totallyTimeSpent" value="38246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,10 +434,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2907916" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -564,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Network/Prefab/PlayerUI.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
+        <state relative-caret-position="405">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <marker date="1544136357262" expanded="false" signature="6:40" ph="..." />
@@ -580,38 +597,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Personnage/Scripts/Player_Controller.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="88" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
-          <folding>
-            <marker date="1544133898540" expanded="false" signature="6:62" ph="..." />
-            <marker date="1544133898540" expanded="true" signature="114:3529" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="505:602" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="656:3527" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="1559:1637" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="1647:1881" ph="/* if (Input.GetKeyDown(KeyCode.S) &amp;&amp; Input.GetKeyDown(KeyCode.W) &amp;&amp; Input.GetKeyDown(KeyCode.P) &amp;&amp; Input.GetKeyD ... */" />
-            <marker date="1544133898540" expanded="true" signature="2001:2103" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="2220:2321" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="2416:2517" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="2612:2713" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="2803:2904" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="2994:3095" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="3159:3221" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="3261:3323" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="3362:3421" ph="{...}" />
-            <marker date="1544133898540" expanded="true" signature="3461:3520" ph="{...}" />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Lobby/PauseMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="19" column="66" lean-forward="true" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
           <folding>
             <marker date="1544136477611" expanded="false" signature="6:84" ph="..." />
             <marker date="1544136477611" expanded="true" signature="125:510" ph="{...}" />
             <marker date="1544136477611" expanded="true" signature="218:269" ph="{...}" />
             <marker date="1544136477611" expanded="true" signature="296:507" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROJET JEU.sln">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Network/OnTriggerload.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <marker date="1545786722906" expanded="false" signature="6:78" ph="..." />
+            <marker date="1545786722906" expanded="true" signature="122:514" ph="{...}" />
+            <marker date="1545786722906" expanded="true" signature="206:242" ph="{...}" />
+            <marker date="1545786722906" expanded="true" signature="287:453" ph="{...}" />
+            <marker date="1545786722906" expanded="true" signature="293:450" ph="{...}" />
+            <marker date="1545786722906" expanded="true" signature="397:447" ph="{...}" />
+            <marker date="1545786722906" expanded="true" signature="476:512" ph="{...}" />
           </folding>
         </state>
       </provider>
