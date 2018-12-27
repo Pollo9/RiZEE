@@ -31,38 +31,49 @@
             <e p="VignetteAndChromaticAberrationEditor.cs" t="Include" />
           </e>
         </e>
-        <e p="EffectExamples" t="Include">
-          <e p="Editor" t="Include">
-            <e p="PackageManagerAssembly" t="Include">
-              <e p="PackageImportList.txt" t="Include" />
-            </e>
-          </e>
-          <e p="Shared" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="DecalDestroyer.cs" t="Include" />
-              <e p="ExtinguishableFire.cs" t="Include" />
-              <e p="GunAim.cs" t="Include" />
-              <e p="GunShoot.cs" t="Include" />
-              <e p="ParticleCollision.cs" t="Include" />
-              <e p="ParticleExamples.cs" t="Include" />
-              <e p="ParticleMenu.cs" t="Include" />
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="SurfaceShader_VC.shader" t="Include" />
-            </e>
-          </e>
-          <e p="TutorialInfo" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="Editor" t="Include">
-                <e p="ReadmeEditor.cs" t="Include" />
-              </e>
-              <e p="Readme.cs" t="Include" />
-            </e>
+        <e p="foret" t="Include">
+          <e p="NatureStarterKit2" t="Include">
+            <e p="info.txt" t="Include" />
           </e>
         </e>
-        <e p="FreeLabAssets" t="Include">
-          <e p="Shaders" t="Include">
-            <e p="SBS_Mana.shader" t="Include" />
+        <e p="hopital" t="Include">
+          <e p="EffectExamples" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PackageManagerAssembly" t="Include">
+                <e p="PackageImportList.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Shared" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="DecalDestroyer.cs" t="Include" />
+                <e p="ExtinguishableFire.cs" t="Include" />
+                <e p="GunAim.cs" t="Include" />
+                <e p="GunShoot.cs" t="Include" />
+                <e p="ParticleCollision.cs" t="Include" />
+                <e p="ParticleExamples.cs" t="Include" />
+                <e p="ParticleMenu.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="SurfaceShader_VC.shader" t="Include" />
+              </e>
+            </e>
+            <e p="TutorialInfo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ReadmeEditor.cs" t="Include" />
+                </e>
+                <e p="Readme.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="FreeLabAssets" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="SBS_Mana.shader" t="Include" />
+            </e>
+          </e>
+          <e p="ouverture de porte" t="Include">
+            <e p="ouverture_porte.cs" t="Include" />
+            <e p="ouverture_porte_couloir.cs" t="Include" />
           </e>
         </e>
         <e p="Lobby" t="Include">
@@ -79,10 +90,13 @@
             <e p="PlayerUI.cs" t="Include" />
           </e>
           <e p="SetupP.cs" t="Include" />
-        </e>
-        <e p="ouverture de porte" t="Include">
-          <e p="ouverture_porte.cs" t="Include" />
-          <e p="ouverture_porte_couloir.cs" t="Include" />
+          <e p="Shoot" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerShoot.cs" t="Include" />
+            <e p="PlayerWeapon.cs" t="Include" />
+            <e p="WeaponManager.cs" t="Include" />
+          </e>
         </e>
         <e p="Personnage" t="Include">
           <e p="CameraCollision.cs" t="Include" />
