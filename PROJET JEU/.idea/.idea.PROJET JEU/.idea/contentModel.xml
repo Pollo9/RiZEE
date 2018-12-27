@@ -74,6 +74,7 @@
         </e>
         <e p="Network" t="Include">
           <e p="HostGame.cs" t="Include" />
+          <e p="OnTriggerload.cs" t="Include" />
           <e p="Prefab" t="Include">
             <e p="PlayerUI.cs" t="Include" />
           </e>

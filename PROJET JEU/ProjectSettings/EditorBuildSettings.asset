@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/map hopital.unity
     guid: 498e31d9cfc27d14f8186ae4eef6830b
+  - enabled: 1
+    path: Assets/Scenes/Sous-sol.unity
+    guid: 1ac6360dc98455441aa47ee3b8aeafd3
   m_configObjects: {}
