@@ -8,7 +8,6 @@ public class Player_Controller : NetworkBehaviour
 
     public float cameraRotationLimit = 50f;
     public float lookSensitivity = 4f;
-	public float gravity = 20f;
 	private Vector3 moveDirection = Vector3.zero;
 	private CharacterController Player;
 	private Animator anim;
@@ -20,8 +19,7 @@ public class Player_Controller : NetworkBehaviour
 	void Start ()
 	{
 		Player = GetComponent<CharacterController>();
-		anim = GetComponent<Animator>();
-       
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -33,7 +31,7 @@ public class Player_Controller : NetworkBehaviour
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection = moveDirection * 200* Time.deltaTime;
-        moveDirection.y -= gravity * Time.deltaTime;
+        moveDirection.y -= 100 * Time.deltaTime; //gravity
 		Player.Move(moveDirection * Time.deltaTime);
 
 
