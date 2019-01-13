@@ -24,11 +24,10 @@ public class Player : NetworkBehaviour {
 		return (float)currentHealth / maxHealth;
 	}
 
+	public float hblength;
+
 	[SyncVar]
 	public string username = "Loading...";
-
-	public int kills;
-	public int deaths;
 
 	[SerializeField]
 	private Behaviour[] disableOnDeath;
@@ -61,16 +60,10 @@ public class Player : NetworkBehaviour {
 	}
 
 
-	//void Update()
-	//{
-	//	if (!isLocalPlayer)
-	//		return;
-
-	//	if (Input.GetKeyDown(KeyCode.K))
-	//	{
-	//		RpcTakeDamage(99999);
-	//	}
-	//}
+	private void OnGUI()
+	{
+		GUI.Box(new Rect(10,10,hblength,30),currentHealth + "/" + maxHealth );
+	}
 
 	[ClientRpc]
     public void RpcTakeDamage (int _amount, string _sourceID)
@@ -95,11 +88,9 @@ public class Player : NetworkBehaviour {
 		Player sourcePlayer = GameManager.GetPlayer(_sourceID);
 		if (sourcePlayer != null)
 		{
-			sourcePlayer.kills++;
 			GameManager.instance.onPlayerKilledCallback.Invoke(username, sourcePlayer.username);
 		}
 
-		deaths++;
 
 		//Disable components
 		for (int i = 0; i < disableOnDeath.Length; i++)
