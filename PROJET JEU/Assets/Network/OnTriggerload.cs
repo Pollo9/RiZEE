@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class OnTriggerload : NetworkBehaviour
+public class OnTriggerload : MonoBehaviour
 {
 
 	public GameObject guiobject;

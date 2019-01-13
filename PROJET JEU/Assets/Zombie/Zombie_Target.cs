@@ -75,14 +75,6 @@ public class Zombie_Target : NetworkBehaviour
 					     anim.SetBool("isattack",true);
 				     }
 			     }
-			     else
-			     {
-				     agent.enabled = false;
-				     anim.SetBool("isidle",true);
-				     anim.SetBool("isalert", false);
-				     anim.SetBool("iswalking",false);
-				     anim.SetBool("isattack",false);
-			     }
 		     }
      
      		if(targetTransform != null && targetTransform.GetComponent<BoxCollider>().enabled == false)
