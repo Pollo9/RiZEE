@@ -44,7 +44,11 @@ public class Player_Controller : NetworkBehaviour
         cam.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
 
 
-
+        if (Input.GetKey(KeyCode.R))
+        {
+            anim.SetInteger("States", 30);
+            anim.SetInteger("R_L", 0);
+        }
         //Secret dance ;)
         if (Input.GetKey(KeyCode.P))
 		{   
