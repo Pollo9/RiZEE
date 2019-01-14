@@ -1,9 +1,14 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(SetupP))]
-public class Player : NetworkBehaviour {
+public class Player : NetworkBehaviour
+{
+
 
 	[SyncVar]
 	private bool _isDead = false;
@@ -12,12 +17,14 @@ public class Player : NetworkBehaviour {
 		get { return _isDead; }
 		protected set { _isDead = value; }
 	}
-
+	private NavMeshAgent agent;
+	private Animator anim;
+	
     [SerializeField]
     private int maxHealth = 100;
-
-    [SyncVar]
-    private int currentHealth;
+	
+	[SyncVar]
+	public int currentHealth;
 
 	public float GetHealthPct ()
 	{ 
@@ -58,19 +65,11 @@ public class Player : NetworkBehaviour {
 	private void Awake()
 	{
 		SetDefaults();
+		
 	}
 
 
-	//void Update()
-	//{
-	//	if (!isLocalPlayer)
-	//		return;
-
-	//	if (Input.GetKeyDown(KeyCode.K))
-	//	{
-	//		RpcTakeDamage(99999);
-	//	}
-	//}
+	
 
 	[ClientRpc]
     public void RpcTakeDamage (int _amount, string _sourceID)
@@ -84,52 +83,26 @@ public class Player : NetworkBehaviour {
 
 		if (currentHealth <= 0)
 		{
-			Die(_sourceID);
+			anim = GetComponent<Animator>();
+			agent = GetComponent<NavMeshAgent>();
+			agent.enabled = false;
+			anim.SetBool("isidle",false);
+			anim.SetBool("isalert", false);
+			anim.SetBool("iswalking",false);
+			anim.SetBool("isattack",false);
+			anim.SetBool("isdead",true);
+			float startTime = Time.time;
+			while(startTime + 5f > Time.time)
+			{
+				Die();
+			}
 		}
     }
 
-	private void Die(string _sourceID)
+	private void Die()
 	{
-		isDead = true;
 
-		Player sourcePlayer = GameManager.GetPlayer(_sourceID);
-		if (sourcePlayer != null)
-		{
-			sourcePlayer.kills++;
-			GameManager.instance.onPlayerKilledCallback.Invoke(username, sourcePlayer.username);
-		}
-
-		deaths++;
-
-		//Disable components
-		for (int i = 0; i < disableOnDeath.Length; i++)
-		{
-			disableOnDeath[i].enabled = false;
-		}
-
-		//Disable GameObjects
-		for (int i = 0; i < disableGameObjectsOnDeath.Length; i++)
-		{
-			disableGameObjectsOnDeath[i].SetActive(false);
-		}
-
-		//Disable the collider
-		Collider _col = GetComponent<Collider>();
-		if (_col != null)
-			_col.enabled = false;
-
-		//Spawn a death effect
-		GameObject _gfxIns = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(_gfxIns, 3f);
-
-		//Switch cameras
-		if (isLocalPlayer)
-		{
-			GameManager.instance.SetSceneCameraActive(true);
-			
-		}
-
-		Debug.Log(transform.name + " is DEAD!");
+		Destroy(this.gameObject);
 
 	}
 

@@ -1,15 +1,18 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Networking;
 
 [RequireComponent (typeof (WeaponManager))]
 public class PlayerShoot : NetworkBehaviour
 {
 
-	private const string PLAYER_TAG = "Player";
+	private const string PLAYER_TAG = "Enemy";
 
 	[SerializeField]
 	private Camera cam;
-
+	private NavMeshAgent agent;
+	private Animator anim;
+	
 	[SerializeField]
 	private LayerMask mask;
 
@@ -23,7 +26,8 @@ public class PlayerShoot : NetworkBehaviour
 			Debug.LogError("PlayerShoot: No camera referenced!");
 			this.enabled = false;
 		}
-
+		anim = GetComponent<Animator>();
+		agent = GetComponent<NavMeshAgent>();
 		weaponManager = GetComponent<WeaponManager>();
 	}
 
@@ -87,9 +91,10 @@ public class PlayerShoot : NetworkBehaviour
 		RaycastHit _hit;
 		if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, currentWeapon.range, mask) )
 		{
-			if (_hit.collider.tag == PLAYER_TAG)
+			if (_hit.collider.tag == PLAYER_TAG||_hit.collider.tag == "Player" )
 			{
 				CmdPlayerShot(_hit.collider.name,currentWeapon.damage);
+				
 			}
 			
 
@@ -108,6 +113,7 @@ public class PlayerShoot : NetworkBehaviour
 		Debug.Log(_playerID + " has been shot.");
 		Player _player = GameManager.GetPlayer(_playerID);
 		_player.RpcTakeDamage(damage,_playerID);
+	
 
 	}
 

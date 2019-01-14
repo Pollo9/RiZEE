@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 
 public class Zombie_Target : NetworkBehaviour
 {
+	
 	private NavMeshAgent agent;
     private Transform myTransform;
     public Transform targetTransform;
@@ -53,12 +54,14 @@ public class Zombie_Target : NetworkBehaviour
      				int randomint = Random.Range(0, hitColliders.Length);
      				targetTransform = hitColliders[randomint].transform;
 				    agent.enabled = false;
-				    anim.SetBool("isidle",false);
-				    anim.SetBool("isalert", true);
-				    anim.SetBool("iswalking",false);
-				    anim.SetBool("isattack",false);
-     			}
+				     anim.SetBool("isidle",false);
+				     anim.SetBool("isalert", true);
+				     anim.SetBool("iswalking",false);
+				     anim.SetBool("isattack",false);
+				     anim.SetBool("isdead",false);
+			     }
      		}
+		     
 		     else
 		     {
 			     if (Vector3.Distance(targetTransform.position, transform.position) <= walkingdistance)
@@ -69,11 +72,22 @@ public class Zombie_Target : NetworkBehaviour
 				     anim.SetBool("isalert", false);
 				     anim.SetBool("iswalking",true);
 				     anim.SetBool("isattack",false);
+				     anim.SetBool("isdead",false);
 				     if (Vector3.Distance(targetTransform.position, transform.position) <= attackingdistance)
 				     {
 					     anim.SetBool("iswalking",false);
 					     anim.SetBool("isattack",true);
 				     }
+			     }
+			     else
+			     {
+				    agent.enabled = false;
+			        anim.SetBool("isidle",false);
+			        anim.SetBool("isalert", true);
+			        anim.SetBool("iswalking",false);
+			        anim.SetBool("isattack",false);
+			        anim.SetBool("isdead",false);
+				     
 			     }
 		     }
      
