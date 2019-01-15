@@ -226,7 +226,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Dialogue/hello2.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -245,11 +245,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Zombie/Zombie_Target.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+              <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
               <folding>
                 <marker date="1547577575451" expanded="false" signature="6:130" ph="..." />
                 <marker date="1547577575451" expanded="true" signature="177:3308" ph="{...}" />
@@ -575,12 +575,12 @@
       <workItem from="1547568837039" duration="252000" />
       <workItem from="1547570339149" duration="718000" />
       <workItem from="1547573002531" duration="1643000" />
-      <workItem from="1547577535912" duration="40000" />
+      <workItem from="1547577535912" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59860000" />
+    <option name="totallyTimeSpent" value="60478000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,7 +592,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
@@ -887,27 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Dialogue/hello2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="122" selection-start-line="23" selection-start-column="122" selection-end-line="23" selection-end-column="122" />
-          <folding>
-            <marker date="1547574073256" expanded="false" signature="6:78" ph="..." />
-            <marker date="1547574073256" expanded="true" signature="116:623" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="207:229" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="265:306" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="334:503" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="360:489" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="552:559" ph="{...}" />
-            <marker date="1547574073256" expanded="true" signature="614:621" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Zombie/Zombie_Target.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
           <folding>
             <marker date="1547577575451" expanded="false" signature="6:130" ph="..." />
             <marker date="1547577575451" expanded="true" signature="177:3308" ph="{...}" />
@@ -928,6 +911,23 @@
             <marker date="1547577575451" expanded="true" signature="3064:3124" ph="{...}" />
             <marker date="1547577575451" expanded="true" signature="3158:3305" ph="{...}" />
             <marker date="1547577575451" expanded="true" signature="3181:3297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Dialogue/hello2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="122" selection-start-line="23" selection-start-column="122" selection-end-line="23" selection-end-column="122" />
+          <folding>
+            <marker date="1547574073256" expanded="false" signature="6:78" ph="..." />
+            <marker date="1547574073256" expanded="true" signature="116:623" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="207:229" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="265:306" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="334:503" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="360:489" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="552:559" ph="{...}" />
+            <marker date="1547574073256" expanded="true" signature="614:621" ph="{...}" />
           </folding>
         </state>
       </provider>
