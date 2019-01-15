@@ -91,7 +91,11 @@ public class Player : NetworkBehaviour
 			anim.SetBool("iswalking",false);
 			anim.SetBool("isattack",false);
 			anim.SetBool("isdead",true);
-			Die();
+			float startTime = Time.time;
+			while(startTime + 5f > Time.time)
+			{
+				Die();
+			}
 		}
     }
 
