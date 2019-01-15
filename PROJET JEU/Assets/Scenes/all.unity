@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465791, g: 0.49641317, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11361,7 +11361,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e005deb92065cd74aad34a488d504a8b,
     type: 3}
   m_PrefabInternal: {fileID: 50019913}
---- !u!65 &281957363
+--- !u!65 &281957366
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72833,7 +72833,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4694863910640020, guid: 729470a3c33d11f4496aa46f4eb5880a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -28.32
+      value: -29.84
       objectReference: {fileID: 0}
     - target: {fileID: 4694863910640020, guid: 729470a3c33d11f4496aa46f4eb5880a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -72841,7 +72841,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4694863910640020, guid: 729470a3c33d11f4496aa46f4eb5880a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 96.09
+      value: 102.11
       objectReference: {fileID: 0}
     - target: {fileID: 4694863910640020, guid: 729470a3c33d11f4496aa46f4eb5880a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -81158,6 +81158,26 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134965236780378, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.95616686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134965236780378, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.29282263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134965236780378, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 214.05399
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134965236780378, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134965236780378, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b93fe79d2a44c0d8d4c7021e2d234c, type: 2}
