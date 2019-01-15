@@ -374,18 +374,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4289888548247130}
   - component: {fileID: 95182934931230940}
-  - component: {fileID: 114962084427469906}
-  - component: {fileID: 114807334550523332}
-  - component: {fileID: 114095601587585990}
-  - component: {fileID: 114949048733742914}
-  - component: {fileID: 114129307032584528}
-  - component: {fileID: 114918321640638544}
   - component: {fileID: 143970032702814298}
-  - component: {fileID: 114425073644599786}
-  - component: {fileID: 114635640409561340}
-  - component: {fileID: 114200485126580902}
-  - component: {fileID: 114944780284018866}
   - component: {fileID: 81669595237300330}
+  - component: {fileID: 114138019614029544}
   m_Layer: 8
   m_Name: swat
   m_TagString: Player
@@ -4900,7 +4891,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114095601587585990
+--- !u!114 &114138019614029544
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4908,51 +4899,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1235655573715070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f2ae9e9287500f4f85f897fcd5b9b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 113
-    i1: 2
-    i2: 255
-    i3: 50
-    i4: 236
-    i5: 59
-    i6: 164
-    i7: 24
-    i8: 217
-    i9: 59
-    i10: 3
-    i11: 132
-    i12: 21
-    i13: 154
-    i14: 130
-    i15: 151
-  m_ServerOnly: 1
-  m_LocalPlayerAuthority: 0
---- !u!114 &114129307032584528
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 4
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
+  cameraRotationLimit: 50
+  lookSensitivity: 4
+  cam: {fileID: 0}
 --- !u!114 &114200325745405590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5044,29 +4996,6 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: e5c3dd3dda2747c498244d938aff0d00, type: 3}
   reloadSound: {fileID: 8300000, guid: a236ed6ed1165ca44908f0cfe8c7ed65, type: 3}
   dryFireSound: {fileID: 0}
---- !u!114 &114200485126580902
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f071fb825ea4ef186dc2b86fd0774d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponLayerName: Weapon
-  weaponHolder: {fileID: 4289888548247130}
-  primaryWeapon:
-    name: M4
-    damage: 10
-    range: 100
-    fireRate: 0
-    maxBullets: 70
-    bullets: 20
-    reloadTime: 1
-    graphics: {fileID: 0}
-  isReloading: 0
 --- !u!114 &114359568030169246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5178,20 +5107,6 @@ MonoBehaviour:
   - {fileID: 1544520081940002}
   - {fileID: 1444990938372550}
   startingWeaponIndex: 0
---- !u!114 &114425073644599786
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4655eff983ee68d43bf18e5401c384b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraRotationLimit: 50
-  lookSensitivity: 5
-  cam: {fileID: 20883285926613756}
 --- !u!114 &114527644545508236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5434,18 +5349,6 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: f045130ee140ae940b9976c0315f5d7a, type: 3}
   reloadSound: {fileID: 8300000, guid: a236ed6ed1165ca44908f0cfe8c7ed65, type: 3}
   dryFireSound: {fileID: 0}
---- !u!114 &114635640409561340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c699662691903946ba4f94dd31519e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1235655573715070}
 --- !u!114 &114690226709836262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5928,98 +5831,6 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: e5c3dd3dda2747c498244d938aff0d00, type: 3}
   reloadSound: {fileID: 8300000, guid: a236ed6ed1165ca44908f0cfe8c7ed65, type: 3}
   dryFireSound: {fileID: 0}
---- !u!114 &114807334550523332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a678e54dc438a0429bfa1a43b3ec643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentsToDisable:
-  - {fileID: 114425073644599786}
-  - {fileID: 20883285926613756}
-  - {fileID: 81063953838390410}
-  - {fileID: 114949048733742914}
-  - {fileID: 82688590875656274, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82043024080793434, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82210984165892388, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82120439866287334, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82951700323362152, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82864006260045402, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82492191549601528, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  - {fileID: 82492191549601528, guid: 765375c21650f4b7e8374b026953bce7, type: 2}
-  remonteLayerName: RemotePlayer
---- !u!114 &114918321640638544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95182934931230940}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
---- !u!114 &114944780284018866
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba6b6c515fdc6c49b8d58ab912e83b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  username: Loading...
-  kills: 0
-  deaths: 0
-  disableOnDeath: []
-  disableGameObjectsOnDeath: []
-  deathEffect: {fileID: 0}
-  spawnEffect: {fileID: 1200861104383022, guid: bee400a404a6a45118054df7771b289e,
-    type: 2}
---- !u!114 &114949048733742914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8098be517709cc4a8f05afae702a79b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 20883285926613756}
-  mask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &114962084427469906
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235655573715070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b5df20da9a0c4c6c8019f0f4ca3dbca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomSize: 6
 --- !u!137 &137151386702191060
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

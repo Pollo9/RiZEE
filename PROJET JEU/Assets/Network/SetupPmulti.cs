@@ -1,8 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
 using UnityEngine.Networking;
 using UnityEngine;
+[RequireComponent(typeof(PlayerMulti))]
 
-public class SetupP : NetworkBehaviour
+public class SetupPmulti : NetworkBehaviour
 {
 
 

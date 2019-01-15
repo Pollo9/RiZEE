@@ -1,11 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using UnityEngine.AI;
 
-public class Player : NetworkBehaviour
+[RequireComponent(typeof(SetupPmulti))]
+public class PlayerMulti : NetworkBehaviour
 {
 
 
