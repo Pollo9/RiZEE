@@ -120,7 +120,6 @@
         </e>
         <e p="Network" t="Include">
           <e p="HostGame.cs" t="Include" />
-          <e p="OnTriggerload.cs" t="Include" />
           <e p="Prefab" t="Include">
             <e p="PlayerUI.cs" t="Include" />
           </e>
@@ -131,6 +130,10 @@
             <e p="PlayerShoot.cs" t="Include" />
             <e p="PlayerWeapon.cs" t="Include" />
             <e p="WeaponManager.cs" t="Include" />
+          </e>
+          <e p="switchscene" t="Include">
+            <e p="OnTriggerload.cs" t="Include" />
+            <e p="Ontriggerunload.cs" t="Include" />
           </e>
         </e>
         <e p="Personnage" t="Include">

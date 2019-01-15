@@ -54,6 +54,7 @@ public class Zombie_Target : NetworkBehaviour
      				int randomint = Random.Range(0, hitColliders.Length);
      				targetTransform = hitColliders[randomint].transform;
 				    agent.enabled = false;
+				     //bouge pas
 				     anim.SetBool("isidle",false);
 				     anim.SetBool("isalert", true);
 				     anim.SetBool("iswalking",false);
@@ -66,6 +67,7 @@ public class Zombie_Target : NetworkBehaviour
 		     {
 			     if (Vector3.Distance(targetTransform.position, transform.position) <= walkingdistance)
 			     {
+				     //marche
 				     agent.enabled = true;
 				     agent.SetDestination(targetTransform.transform.position);
 				     anim.SetBool("isidle",false);
@@ -75,12 +77,14 @@ public class Zombie_Target : NetworkBehaviour
 				     anim.SetBool("isdead",false);
 				     if (Vector3.Distance(targetTransform.position, transform.position) <= attackingdistance)
 				     {
+					     //attak
 					     anim.SetBool("iswalking",false);
 					     anim.SetBool("isattack",true);
 				     }
 			     }
 			     else
 			     {
+				     //bouge pas
 				    agent.enabled = false;
 			        anim.SetBool("isidle",false);
 			        anim.SetBool("isalert", true);
