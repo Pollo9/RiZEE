@@ -31,7 +31,7 @@ public class Player_Controller : NetworkBehaviour
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection = moveDirection * 200* Time.deltaTime;
-        moveDirection.y -= 100 * Time.deltaTime; //gravity
+        moveDirection.y -= 500 * Time.deltaTime; //gravity
 		Player.Move(moveDirection * Time.deltaTime);
 
 
@@ -43,7 +43,7 @@ public class Player_Controller : NetworkBehaviour
 
         cam.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
 
-
+        //reload
         if (Input.GetKey(KeyCode.R))
         {
             anim.SetInteger("States", 30);
