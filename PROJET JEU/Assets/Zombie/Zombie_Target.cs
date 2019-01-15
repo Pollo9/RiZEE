@@ -15,6 +15,9 @@ public class Zombie_Target : NetworkBehaviour
 	private Animator anim;
 	public float attackingdistance;
 	public float walkingdistance;
+
+	public AudioSource zombie_attack;
+	public AudioSource zombie_breathing;
      
      	// Use this for initialization
      	void Start ()
@@ -60,6 +63,8 @@ public class Zombie_Target : NetworkBehaviour
 				     anim.SetBool("iswalking",false);
 				     anim.SetBool("isattack",false);
 				     anim.SetBool("isdead",false);
+				     
+				     zombie_breathing.Play();
 			     }
      		}
 		     
@@ -80,6 +85,8 @@ public class Zombie_Target : NetworkBehaviour
 					     //attak
 					     anim.SetBool("iswalking",false);
 					     anim.SetBool("isattack",true);
+					     
+					     zombie_attack.Play();
 				     }
 			     }
 			     else
@@ -91,6 +98,8 @@ public class Zombie_Target : NetworkBehaviour
 			        anim.SetBool("iswalking",false);
 			        anim.SetBool("isattack",false);
 			        anim.SetBool("isdead",false);
+				     
+				     zombie_breathing.Play();
 				     
 			     }
 		     }
