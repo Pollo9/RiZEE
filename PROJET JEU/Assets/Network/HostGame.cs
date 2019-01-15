@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;	
 
-public class HostGame : MonoBehaviour
+public class HostGame : NetworkBehaviour
 {
 
 	[SerializeField] 
