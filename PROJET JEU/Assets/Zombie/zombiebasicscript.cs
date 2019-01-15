@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Networking;
 
-public class zombiebasicscript : NetworkBehaviour
+public class zombiebasicscript : MonoBehaviour
 {
 
     private Transform player;
@@ -16,6 +15,8 @@ public class zombiebasicscript : NetworkBehaviour
     private Animator anim;
     private Vector3 direction;
     private NavMeshAgent agent;
+    public AudioSource zombie_attack;
+    public AudioSource zombie_breathing;
 
     // Use this for initialization
     void Start ()
@@ -39,6 +40,7 @@ public class zombiebasicscript : NetworkBehaviour
             anim.SetBool("isalert", true);
             anim.SetBool("iswalking",false);
             anim.SetBool("isattack",false);
+            zombie_breathing.Play();
         }
         //attack & move
         else if (Vector3.Distance(player.position, transform.position) <= walkingdistance)
@@ -53,6 +55,7 @@ public class zombiebasicscript : NetworkBehaviour
             {
                 anim.SetBool("iswalking",false);
                 anim.SetBool("isattack",true);
+                zombie_attack.Play();
             }
         }
         //idle
@@ -62,6 +65,7 @@ public class zombiebasicscript : NetworkBehaviour
             anim.SetBool("isalert", false);
             anim.SetBool("iswalking",false);
             anim.SetBool("isattack",false);
+            zombie_breathing.Play();
         }
     }
 }
