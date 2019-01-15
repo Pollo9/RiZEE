@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\thoma\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\thoma\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_PROJET JEU.2114707706.00" t="ExcludeRecursive" />
+    <e p="C:\Users\thoma\OneDrive\Documents\GitHub\RiZEE\PROJET JEU" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -9,11 +11,16 @@
         <e p="Dialogue" t="Include">
           <e p="Beginning.cs" t="Include" />
           <e p="decision.cs" t="Include" />
+          <e p="eavion.cs" t="Include" />
           <e p="firstzombie.cs" t="Include" />
+          <e p="foret1eraile.cs" t="Include" />
           <e p="foretdebut.cs" t="Include" />
           <e p="Getkey.cs" t="Include" />
           <e p="gotit.cs" t="Include" />
+          <e p="hello1.cs" t="Include" />
+          <e p="hello2.cs" t="Include" />
           <e p="passit.cs" t="Include" />
+          <e p="serum.cs" t="Include" />
         </e>
         <e p="Easy Weapons" t="Include">
           <e p="Editor" t="Include">
@@ -411,7 +418,5 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_PROJET JEU.-349403202.00" t="ExcludeRecursive" />
   </component>
 </project>
