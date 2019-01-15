@@ -9,13 +9,15 @@ public class Ontriggerunload : MonoBehaviour
 	public int scene;
 	private bool unloaded = false;
 
-	public void Ontrigger(Collider other)
+	public void Ontrigger()
 	{
 		if (!unloaded)
 		{
 			unloaded = true;
-			SceneManager.UnloadScene(scene);
+			Anymanager.anymanager.Unloadscene(scene);
+			
 		}
+
 	}
 }
 	
