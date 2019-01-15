@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnTriggerload : MonoBehaviour
 {
 
 	public GameObject guiobject;
-	public string leveltoLoad;
+	public int scene;
+	private bool loaded = false;
 
 	private void Start()
 	{
@@ -15,17 +17,18 @@ public class OnTriggerload : MonoBehaviour
 
 	private void OnTriggerStay(Collider other)
 	{
-		
+		if (!loaded)
+		{
 			guiobject.SetActive(true);
-			if (guiobject.activeInHierarchy == true && Input.GetButtonDown("Use"))
-			{
-				Application.LoadLevel(leveltoLoad);
-			}
+			SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+			loaded = true;
+		}
 		
 	}
 
 	void OnTriggerExit()
 	{
 		guiobject.SetActive(false);
+		
 	}
 }
