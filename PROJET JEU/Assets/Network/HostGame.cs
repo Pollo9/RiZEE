@@ -30,13 +30,20 @@ public class HostGame : MonoBehaviour
 			Debug.Log("Creation de la partie : " + RoomName + " avec " + roomSize + "places.");
 
 			networkManager.matchMaker.CreateMatch(RoomName, roomSize, true, "", "", "", 0, 0,
-				networkManager.OnMatchCreate);
-			//premier "" il s'agit du mdp
+				networkManager.OnMatchCreate);	
 		}
 		
-		//Créer la partie
-		
 	}
+
+	public void createsolo()
+	{
+		Application.LoadLevel("all");
+	}
+	public void createsolo2()
+	{
+		Application.LoadLevel("foret");
+	}
+
  	
 	
 

@@ -168,7 +168,7 @@ MonoBehaviour:
     type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
-  m_OfflineScene: Lobby
+  m_OfflineScene: 
   m_OnlineScene: map hopital
   m_SpawnPrefabs: []
   m_CustomConfig: 0
