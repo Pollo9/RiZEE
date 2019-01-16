@@ -333,6 +333,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4758589276632032}
   - component: {fileID: 114264240787061498}
+  - component: {fileID: 95593452529235748}
+  - component: {fileID: 114820074890366632}
+  - component: {fileID: 114450093551273642}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -2611,6 +2614,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95593452529235748
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506767844728260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &95665916169707576
 Animator:
   serializedVersion: 3
@@ -3109,6 +3130,25 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: 8712960018b3fa4478f96eaaff2fa330, type: 3}
   reloadSound: {fileID: 8300000, guid: a236ed6ed1165ca44908f0cfe8c7ed65, type: 3}
   dryFireSound: {fileID: 0}
+--- !u!114 &114450093551273642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506767844728260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 0}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114612331182760464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3200,6 +3240,38 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: e5c3dd3dda2747c498244d938aff0d00, type: 3}
   reloadSound: {fileID: 8300000, guid: a236ed6ed1165ca44908f0cfe8c7ed65, type: 3}
   dryFireSound: {fileID: 0}
+--- !u!114 &114820074890366632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506767844728260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 118
+    i1: 83
+    i2: 117
+    i3: 194
+    i4: 22
+    i5: 80
+    i6: 244
+    i7: 183
+    i8: 232
+    i9: 55
+    i10: 75
+    i11: 2
+    i12: 105
+    i13: 83
+    i14: 188
+    i15: 231
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114870761991537436
 MonoBehaviour:
   m_ObjectHideFlags: 1
