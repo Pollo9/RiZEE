@@ -25,10 +25,11 @@ public class Player_Controller : NetworkBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-        if (Cursor.lockState != CursorLockMode.Locked)
+        /*if (Cursor.lockState != CursorLockMode.Locked)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
+        */
         if (PauseMenu.IsOn) // pour ne pas bouger quand on appuie sur echap pour quitter
 			return;
         Player.transform.Rotate(0, Input.GetAxisRaw("Mouse X") * lookSensitivity, 0) ;
