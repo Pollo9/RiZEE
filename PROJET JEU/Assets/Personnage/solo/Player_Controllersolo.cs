@@ -27,8 +27,8 @@ public class Player_Controllersolo : MonoBehaviour
         Player.transform.Rotate(0, Input.GetAxisRaw("Mouse X") * lookSensitivity, 0);
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
-        moveDirection = moveDirection * 200 * Time.deltaTime;
-        moveDirection.y -= 500 * Time.deltaTime; //gravity
+        moveDirection = moveDirection * 150 * Time.deltaTime;
+        moveDirection.y -= 100 * Time.deltaTime; //gravity
         Player.Move(moveDirection * Time.deltaTime);
 
 

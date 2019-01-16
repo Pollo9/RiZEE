@@ -6,10 +6,12 @@ public class Getkey : MonoBehaviour
 {
     private bool inGUI;
 	private bool sortie = true;
+    public GameObject key;
 
     void OnTriggerEnter(Collider other)
-	    {
+        {   
 	    	inGUI = true;
+        key.SetActive(false);
 	    }
 	void OnTriggerExit(Collider other)
     	{
