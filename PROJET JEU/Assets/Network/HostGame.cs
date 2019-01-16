@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.Networking;	
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;	
 
 public class HostGame : NetworkBehaviour
 {
@@ -7,6 +8,7 @@ public class HostGame : NetworkBehaviour
 	[SerializeField] 
 	private uint roomSize = 6;
 
+	public GameObject objet;
 	private string RoomName;
 	private NetworkManager networkManager;
 
@@ -37,11 +39,18 @@ public class HostGame : NetworkBehaviour
 
 	public void createsolo()
 	{
-		Application.LoadLevel("all");
+		SceneManager.LoadScene(3);
+		gameObject.SetActive(false);
 	}
 	public void createsolo2()
 	{
 		Application.LoadLevel("foret");
+	}
+
+	public void createsolosolo()
+	{
+		Application.LoadLevel("all");
+		gameObject.SetActive(false);
 	}
 
  	
